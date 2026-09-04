@@ -19,7 +19,7 @@ var (
 // runtime.LockOSThread() first.
 func runTray(tooltip string) {
 	hInstance := getModuleHandle()
-	icon := loadAppIcon(hInstance, 1) // resource ID 1: embedded ACS-v5.ico (see build.ps1)
+	icon := loadAppIcon(hInstance, 1) // resource ID 1: embedded acs round.ico (see build.ps1)
 	if icon == 0 {
 		icon = loadIcon(idiApplication) // fallback if the .syso wasn't linked in
 	}
